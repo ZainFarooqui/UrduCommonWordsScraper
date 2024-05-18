@@ -23,7 +23,7 @@ def start_up():
     ignore_arg = args.ignore if args.ignore else 0
 
     return count_arg, ignore_arg
-    
+
 def get_target_urls():
     file_path = os.path.join(CURRENT_DIR, 'config.json')
 
