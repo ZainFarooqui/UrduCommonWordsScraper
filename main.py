@@ -61,7 +61,7 @@ def output_common_words(size=100, start=0):
         raise TypeError("Too few words found, too many too ignore")
 
     most_common = sorted(WORD_COUNTER, key=WORD_COUNTER.get, reverse=True)[start:end]
-    file_path = os.path.join(CURRENT_DIR, 'out.txt')
+    file_path = os.path.join(CURRENT_DIR, 'output.txt')
 
     with open(file_path, 'w', encoding='utf-8') as my_file:
         for out in most_common:
